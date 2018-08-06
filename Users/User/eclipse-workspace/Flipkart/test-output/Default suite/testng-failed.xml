@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="QAITraining.Flipkart.Login">
+        <methods>
+          <include name="openLoginWindows"/>
+          <include name="driverConnection"/>
+          <include name="checkLogin_email"/>
+          <include name="checkLogin_mobile"/>
+          <include name="closeConnection"/>
+        </methods>
+      </class> <!-- QAITraining.Flipkart.Login -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

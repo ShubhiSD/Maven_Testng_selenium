@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="SomeFeature(failed)">
+    <groups>
+      <run>
+        <include name="login"/>
+        <include name="Itemchoose"/>
+        <include name="cart"/>
+        <exclude name="registration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="QAITraining.Flipkart.selectItem">
+        <methods>
+          <include name="itemPageOpen"/>
+          <include name="serachItem"/>
+        </methods>
+      </class> <!-- QAITraining.Flipkart.selectItem -->
+      <class name="QAITraining.Flipkart.checkOut">
+        <methods>
+          <include name="orderPayment"/>
+          <include name="orderSummaryPage"/>
+        </methods>
+      </class> <!-- QAITraining.Flipkart.checkOut -->
+    </classes>
+  </test> <!-- SomeFeature(failed) -->
+</suite> <!-- Failed suite [Suite] -->

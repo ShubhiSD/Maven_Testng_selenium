@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="9" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43686" started-at="2018-08-05T06:12:26Z" finished-at="2018-08-05T06:13:09Z">
+    <groups>
+      <group name="Itemchoose">
+        <method signature="selectItem.serachItem()[pri:6, instance:QAITraining.Flipkart.selectItem@302f7971]" name="serachItem" class="QAITraining.Flipkart.selectItem"/>
+        <method signature="selectItem.itemPageOpen()[pri:7, instance:QAITraining.Flipkart.selectItem@302f7971]" name="itemPageOpen" class="QAITraining.Flipkart.selectItem"/>
+      </group> <!-- Itemchoose -->
+      <group name="login">
+        <method signature="Login.checkLogin_email()[pri:4, instance:QAITraining.Flipkart.Login@5a5338df]" name="checkLogin_email" class="QAITraining.Flipkart.Login"/>
+      </group> <!-- login -->
+      <group name="cart">
+        <method signature="checkOut.addtoCart()[pri:9, instance:QAITraining.Flipkart.checkOut@332729ad]" name="addtoCart" class="QAITraining.Flipkart.checkOut"/>
+        <method signature="checkOut.orderSummaryPage()[pri:10, instance:QAITraining.Flipkart.checkOut@332729ad]" name="orderSummaryPage" class="QAITraining.Flipkart.checkOut"/>
+        <method signature="checkOut.orderPayment()[pri:11, instance:QAITraining.Flipkart.checkOut@332729ad]" name="orderPayment" class="QAITraining.Flipkart.checkOut"/>
+      </group> <!-- cart -->
+    </groups>
+    <test name="SomeFeature" duration-ms="43686" started-at="2018-08-05T06:12:26Z" finished-at="2018-08-05T06:13:09Z">
+      <class name="QAITraining.Flipkart.selectItem">
+        <test-method status="PASS" signature="serachItem()[pri:6, instance:QAITraining.Flipkart.selectItem@302f7971]" name="serachItem" duration-ms="3545" started-at="2018-08-05T11:42:37Z" finished-at="2018-08-05T11:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serachItem -->
+        <test-method status="PASS" signature="itemPageOpen()[pri:7, instance:QAITraining.Flipkart.selectItem@302f7971]" name="itemPageOpen" duration-ms="9068" started-at="2018-08-05T11:42:40Z" depends-on-methods="QAITraining.Flipkart.selectItem.serachItem" finished-at="2018-08-05T11:42:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itemPageOpen -->
+      </class> <!-- QAITraining.Flipkart.selectItem -->
+      <class name="QAITraining.Flipkart.Login">
+        <test-method status="PASS" signature="driverConnection()[pri:0, instance:QAITraining.Flipkart.Login@5a5338df]" name="driverConnection" is-config="true" duration-ms="10089" started-at="2018-08-05T11:42:16Z" finished-at="2018-08-05T11:42:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverConnection -->
+        <test-method status="PASS" signature="openLoginWindows()[pri:0, instance:QAITraining.Flipkart.Login@5a5338df]" name="openLoginWindows" is-config="true" duration-ms="228" started-at="2018-08-05T11:42:26Z" finished-at="2018-08-05T11:42:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginWindows -->
+        <test-method status="PASS" signature="checkLogin_email()[pri:4, instance:QAITraining.Flipkart.Login@5a5338df]" name="checkLogin_email" duration-ms="10836" started-at="2018-08-05T11:42:26Z" finished-at="2018-08-05T11:42:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin_email -->
+        <test-method status="PASS" signature="closeConnection()[pri:0, instance:QAITraining.Flipkart.Login@5a5338df]" name="closeConnection" is-config="true" duration-ms="2061" started-at="2018-08-05T11:43:09Z" finished-at="2018-08-05T11:43:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- QAITraining.Flipkart.Login -->
+      <class name="QAITraining.Flipkart.checkOut">
+        <test-method status="PASS" signature="addtoCart()[pri:9, instance:QAITraining.Flipkart.checkOut@332729ad]" name="addtoCart" duration-ms="1345" depends-on-groups="Itemchoose" started-at="2018-08-05T11:42:49Z" finished-at="2018-08-05T11:42:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCart -->
+        <test-method status="PASS" signature="orderSummaryPage()[pri:10, instance:QAITraining.Flipkart.checkOut@332729ad]" name="orderSummaryPage" duration-ms="7119" depends-on-groups="Itemchoose" started-at="2018-08-05T11:42:51Z" finished-at="2018-08-05T11:42:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderSummaryPage -->
+        <test-method status="PASS" signature="orderPayment()[pri:11, instance:QAITraining.Flipkart.checkOut@332729ad]" name="orderPayment" duration-ms="11492" depends-on-groups="Itemchoose" started-at="2018-08-05T11:42:58Z" depends-on-methods="QAITraining.Flipkart.checkOut.orderSummaryPage" finished-at="2018-08-05T11:43:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderPayment -->
+      </class> <!-- QAITraining.Flipkart.checkOut -->
+    </test> <!-- SomeFeature -->
+  </suite> <!-- Suite -->
+</testng-results>

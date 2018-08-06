@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    
+    <test name="SomeFeature">
+        <groups>
+            <run>
+                <exclude name="registration" />
+                <include name="login" />
+                <include name="Itemchoose"/>
+                <include name="cart"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="QAITraining.Flipkart.Login" />
+             <class name="QAITraining.Flipkart.selectItem" />
+             <class name="QAITraining.Flipkart.checkOut"/>
+        </classes>
+    </test>
+</suite>
